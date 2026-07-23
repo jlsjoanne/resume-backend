@@ -9,9 +9,9 @@
 <body>
     <header>
         <h2>蕭主安 Joanne Hsiao</h2>
-        <p>Rice University 計算科學與工程碩士，具資料科學、演算法、資訊檢索與 AI/ML 相關訓練。</p>
-        <p>具約一年半資料分析與資料處理經驗，使用 Python、R 與 Microsoft SQL Server 完成自動化資料蒐集、模型建置與資料整併。</p>
-        <p>目前參加後端工程師培訓，已完成 ASP.NET MVC 後台 CMS 專題，並於協作專題負責 ASP.NET Core Web API 開發。</p>
+        <p>參與後端工程師培訓，已完成協作專案的後端 API 開發，具 ASP.NET Core Web API、SQL Server 與 Azure 雲端服務實作經驗。</p>
+        <p>具 Microsoft SQL Server 資料庫應用與約一年半資料處理經驗，熟悉 Python、R 及資料自動化、模型建置與資料整併流程。</p>
+        <p>Rice University 計算科學與工程碩士，具資料科學、演算法與 AI/ML 相關訓練。</p>
         <div class="contact">
             <div class="box">
                 <img src="./assets/mail.png" alt="email">
@@ -34,33 +34,6 @@
         </div>
     </header>
 
-    <section class="education">
-        <h2><img src="./assets/school.png" alt="education"> 學歷 Education</h2>
-        <div class="detail_content">
-            <div class="time">
-                <p>08/2020~12/2023<br>Texas, USA</p>
-            </div>
-            <div class="info">
-                <h3>Rice University 萊斯大學</h3>
-                <h4>Master of Computational Science and Engineering</h4>
-                <div class="box">
-                    <ul>
-                        <li>相關課程：Algorithms, Data Science, Information Retrieval, Neural Machine Learning, Deep Learning</li>
-                        <li>課程專題：使用 R 建立第二型糖尿病風險預測模型，結合 Self Organizing Map 分群與自實作雙層 Neural Networks，準確率較先前研究結果提升逾 20%。</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="detail_content">
-            <div class="time">
-                <p>09/2012~06/2017<br>Taipei, Taiwan</p>
-            </div>
-            <div class="info">
-                <h3>國立政治大學</h3>
-                <h4>統計系學士 Bachelor of Science in Statistics｜商學院巨量資料分析學程</h4>
-            </div>
-        </div>
-    </section>
     <section class="other">
         <h2><img src="./assets/other.png" alt="other"> 專案實作 Projects</h2>
         <div class="detail_content">
@@ -78,10 +51,14 @@
                     </ul>
                 </div>
 
-                <h4>與前端工程師協作中專題｜ASP.NET Core Web API, JWT/OAuth, Azure, SQL Server</h4>
+                <h4>StyCue 穿搭社群委託平台｜後端｜Web API, SQL Server, Azure</h4>
                 <div class="box">
                     <ul>
-                        <li>目前與前端工程師協作專題，負責後端 ASP.NET Core Web API 開發、JWT/OAuth 驗證、SQL Server 資料庫設計、Azure VM 部署並整合Blob Storage。</li>
+                        <li>ASP.NET Core Web API 專案採 Controller-based 架構，以 Controller、Service Layer 與 DTO 分層管理 API 合約與商業邏輯。</li>
+                        <li>依 RESTful 原則完成 16 個 Controller、63 條 API，涵蓋帳號、貼文、委託、留言及社群互動功能。</li>
+                        <li>設計與建立 Microsoft SQL Server 資料模型與 EF Core Migrations，實作委託生命週期及可追溯的點數交易、獎勵與退款流程。</li>
+                        <li>整合 JWT、Google 登入與 Azure Blob Storage，完成帳號驗證與私有圖片存取機制。</li>
+                        <li>建置 SearchDocument 全文搜尋、OpenAPI／Scalar 文件與統一例外回應，並部署至 Azure VM，降低前後端串接與測試成本。</li>
                     </ul>
                 </div>
             </div>
@@ -133,6 +110,33 @@
             </div>
         </div>
 
+    </section>
+    <section class="education">
+        <h2><img src="./assets/school.png" alt="education"> 學歷 Education</h2>
+        <div class="detail_content">
+            <div class="time">
+                <p>08/2020~12/2023<br>Texas, USA</p>
+            </div>
+            <div class="info">
+                <h3>Rice University 萊斯大學</h3>
+                <h4>Master of Computational Science and Engineering</h4>
+                <div class="box">
+                    <ul>
+                        <li>相關課程：Algorithms, Data Science, Information Retrieval, Neural Machine Learning, Deep Learning</li>
+                        <li>課程專題：使用 R 建立第二型糖尿病風險預測模型，結合 Self Organizing Map 分群與自實作雙層 Neural Networks，準確率較先前研究結果提升逾 20%。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="detail_content">
+            <div class="time">
+                <p>09/2012~06/2017<br>Taipei, Taiwan</p>
+            </div>
+            <div class="info">
+                <h3>國立政治大學</h3>
+                <h4>統計系學士 Bachelor of Science in Statistics｜商學院巨量資料分析學程</h4>
+            </div>
+        </div>
     </section>
     <section class="other_info">
         <div class="other">
