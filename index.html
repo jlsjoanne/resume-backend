@@ -9,9 +9,9 @@
 <body>
     <header>
         <h2>蕭主安 Joanne Hsiao</h2>
-        <p>參與後端工程師培訓，已完成協作專案的後端 API 開發，具 ASP.NET Core Web API、SQL Server 與 Azure 雲端服務實作經驗。</p>
-        <p>具 Microsoft SQL Server 資料庫應用與約一年半資料處理經驗，熟悉 Python、R 及資料自動化、模型建置與資料整併流程。</p>
-        <p>Rice University 計算科學與工程碩士，具資料科學、演算法與 AI/ML 相關訓練。</p>
+        <p>近期完成七個多月的後端工程師培訓，並以 C#、ASP.NET 與 SQL Server 完成一項個人專題及一項團隊協作專題。</p>
+        <p>Rice University 計算科學與工程碩士、國立政治大學統計學系學士，具資料科學、演算法與 AI/ML 相關訓練。</p>
+        <p>另具有資料處理與分析工作經驗，曾使用 Python、R 與 SQL Server 進行資料蒐集、整併、自動化及模型建置。</p>
         <div class="contact">
             <div class="box">
                 <img src="./assets/mail.png" alt="email">
@@ -42,26 +42,53 @@
             </div>
             <div class="info">
                 <h3>火箭隊培訓營｜後端工程師培訓暨專題實作</h3>
-                <h4>遊艇品牌官網與後台內容管理系統｜C#, ASP.NET MVC 5, EF6, SQL Server</h4>
+                <h4>StyCue 穿搭社群委託平台｜團隊協作後端開發｜C#, ASP.NET Core Web API, EF Core, SQL Server, Azure</h4>
                 <div class="box">
                     <ul>
-                        <li>以 ASP.NET MVC 5 與 EF6 Code First 建置遊艇品牌官網及後台系統，完成遊艇、新聞、經銷商、會員與聯絡紀錄等模組的資料模型設計與 CRUD 流程。</li>
+                        <li>將委託生命週期、積分錢包及交易明細等需求轉換為 SQL Server 資料模型與 RESTful API，並以 Controller、Service Layer 與 DTO 分層開發。</li>
+                        <li>運用資料庫交易及 rowversion 版本檢查處理同時發生的加碼與結算操作，避免重複扣款、餘額覆寫及重複結算，維持資料一致性。</li>
+                        <li>以 ASP.NET Core Background Service 執行委託到期檢查與逾期獎勵結算，使非使用者觸發的流程也能持續處理。</li>
+                        <li>整合 JWT 驗證、Google 第三方登入、Azure Blob Storage 與 OpenAPI／Scalar 文件，支援前端串接及測試，並將服務部署於 Windows Server。</li>
+                    </ul>
+                </div>
+
+                <h4>遊艇品牌官網與後台內容管理系統｜個人專題｜C#, ASP.NET MVC 5, EF6, SQL Server</h4>
+                <div class="box">
+                    <ul>
+                        <li>以 ASP.NET MVC 5 與 EF6 Code First 建置遊艇品牌官網及後台系統，完成遊艇、新聞、經銷商、會員與聯絡紀錄等模組的資料模型與 CRUD 流程，並實作搜尋、分頁及軟刪除等內容管理功能。</li>
                         <li>實作後台登入與存取保護、密碼 Salt + SHA-256 雜湊，並於聯絡表單整合 reCAPTCHA、資料保存與 SMTP Email 通知。</li>
                         <li>設計圖片與附件上傳流程，加入檔案大小、類型與 MIME 驗證，並以 GUID 檔名及失敗清理機制維持檔案與資料庫一致性。</li>
                     </ul>
                 </div>
+            </div>
 
-                <h4>StyCue 穿搭社群委託平台｜後端｜Web API, SQL Server, Azure</h4>
+        </div>
+    </section>
+    <section class="education">
+        <h2><img src="./assets/school.png" alt="education"> 學歷 Education</h2>
+        <div class="detail_content">
+            <div class="time">
+                <p>08/2021~12/2023<br>Texas, USA</p>
+            </div>
+            <div class="info">
+                <h3>Rice University 萊斯大學</h3>
+                <h4>Master of Computational Science and Engineering</h4>
                 <div class="box">
                     <ul>
-                        <li>設計 SQL Server 資料模型與 EF Core Migrations，建構委託生命週期、積分錢包及交易明細，支援加碼、退款與獎勵的可追溯帳務流程。</li>
-                        <li>針對積分餘額、委託加碼與獎勵結算等同時交易，實作資料庫併發控制與衝突處理，避免重複扣款、餘額覆寫及重複結算，維持資料一致性。</li>
-                        <li>以 ASP.NET Core Background Service 執行委託到期檢查與逾期獎勵結算，讓到期流程不必等待使用者操作也能持續處理。</li>
-                        <li>以 Controller、Service Layer 與 DTO 分層開發 RESTful API，整合第三方登入、Azure 服務及 OpenAPI／Scalar 文件。</li>
+                        <li>相關課程：Algorithms, Data Science, Information Retrieval, Neural Machine Learning, Deep Learning</li>
+                        <li>課程專題：使用 R 處理缺失值、類別資料轉換與數值縮放，並以矩陣運算實作倒傳遞類神經網路二元分類模型；針對類別不平衡資料，以敏感度、特異度與 AUC 評估模型表現。</li>
                     </ul>
                 </div>
             </div>
-
+        </div>
+        <div class="detail_content">
+            <div class="time">
+                <p>09/2012~06/2017<br>Taipei, Taiwan</p>
+            </div>
+            <div class="info">
+                <h3>國立政治大學</h3>
+                <h4>統計系學士 Bachelor of Science in Statistics｜商學院巨量資料分析學程</h4>
+            </div>
         </div>
     </section>
     <section class="work">
@@ -108,55 +135,19 @@
                 </div>
             </div>
         </div>
-
     </section>
-    <section class="education">
-        <h2><img src="./assets/school.png" alt="education"> 學歷 Education</h2>
-        <div class="detail_content">
-            <div class="time">
-                <p>08/2021~12/2023<br>Texas, USA</p>
-            </div>
-            <div class="info">
-                <h3>Rice University 萊斯大學</h3>
-                <h4>Master of Computational Science and Engineering</h4>
-                <div class="box">
-                    <ul>
-                        <li>相關課程：Algorithms, Data Science, Information Retrieval, Neural Machine Learning, Deep Learning</li>
-                        <li>課程專題：使用 R 建立第二型糖尿病風險預測模型，結合 Self Organizing Map 分群與自實作雙層 Neural Networks，準確率較先前研究結果提升逾 20%。</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="detail_content">
-            <div class="time">
-                <p>09/2012~06/2017<br>Taipei, Taiwan</p>
-            </div>
-            <div class="info">
-                <h3>國立政治大學</h3>
-                <h4>統計系學士 Bachelor of Science in Statistics｜商學院巨量資料分析學程</h4>
-            </div>
+    <section class="skills">
+        <h2><img src="assets/tool.png" alt="skills"> 技能 Skills</h2>
+        <div class="skill-grid">
+            <p><strong>後端開發</strong><span>C#、ASP.NET Core Web API、ASP.NET MVC 5、Entity Framework Core、Entity Framework 6、RESTful API、Background Service</span></p>
+            <p><strong>資料庫</strong><span>SQL、Microsoft SQL Server、關聯式資料模型設計、資料庫交易與 rowversion 併發控制</span></p>
+            <p><strong>資料處理</strong><span>Python、R、Pandas、Scikit-learn</span></p>
+            <p><strong>工具平台</strong><span>Git、Windows Server、Azure Blob Storage、JWT、Google 第三方登入、OpenAPI／Scalar</span></p>
         </div>
     </section>
-    <section class="other_info">
-        <div class="other">
-            <h2><img src="assets/tool.png" alt="skills"> 技能 Skills</h2>
-            <span>程式語言</span>
-            <p>Python, R, SQL, C#</p>
-            <span>技術及工具</span>
-            <p>MS SQL Server, ASP.NET, Git, Pandas, Scikit-learn, Neovim, Azure</p>
-        </div>
-        <div class="other">
-            <h2><img src="assets/language.png" alt="languages"> 語言 Languages</h2>
-            <ul>
-                <li>英文: Fluent
-                    <ul>
-                        <li>TOEIC: 910(2017)</li>
-                        <li>TOEFL iBT: 103(2019)</li>
-                    </ul>
-                </li>
-                <li>中文: 母語(Native) </li>
-            </ul>
-        </div>
+    <section class="languages">
+        <h2><img src="assets/language.png" alt="languages"> 語言 Languages</h2>
+        <p><strong>英文：</strong>Fluent・TOEIC 910（2017）・TOEFL iBT 103（2019）　　<strong>中文：</strong>母語</p>
     </section>
 </body>
 </html>
