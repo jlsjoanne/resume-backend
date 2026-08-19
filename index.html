@@ -9,9 +9,10 @@
 <body>
     <header>
         <h2>蕭主安 Joanne Hsiao</h2>
-        <p>近期完成七個多月的後端工程師培訓，並以 C#、ASP.NET 與 SQL Server 完成一項個人專題及一項團隊協作專題。</p>
-        <p>Rice University 計算科學與工程碩士、國立政治大學統計學系學士，具資料科學、演算法與 AI/ML 相關訓練。</p>
-        <p>另具有資料處理與分析工作經驗，曾使用 Python、R 與 SQL Server 進行資料蒐集、整併、自動化及模型建置。</p>
+        <p>具 C#／.NET 系統開發與資料分析背景，完成七個多月後端工程師培訓。</p>
+        <p>培訓期間完成個人 MVC 專題並負責團隊協作專題的 Web API 開發。</p>
+        <p>Rice University 計算科學與工程碩士、國立政治大學統計學系學士。</p>
+        <p>具資料處理與分析工作經驗，使用 Python、R 與 SQL Server 進行資料蒐集、整併、自動化及模型建置。</p>
         <div class="contact">
             <div class="box">
                 <img src="./assets/mail.png" alt="email">
@@ -34,6 +35,17 @@
         </div>
     </header>
 
+    <section class="skills">
+        <h2><img src="assets/tool.png" alt="skills"> 技能 Skills</h2>
+        <div class="skill-grid">
+            <p><strong>後端開發</strong><span>C#、ASP.NET Core、ASP.NET MVC 5、EF Core／EF6、RESTful API、Background Service、async/await</span></p>
+            <p><strong>Web 開發</strong><span>Razor（.cshtml）、HTML、CSS、JavaScript（jQuery）</span></p>
+            <p><strong>資料庫</strong><span>SQL、Microsoft SQL Server、關聯式資料模型設計、索引、分頁查詢、資料庫交易與 rowversion 併發控制</span></p>
+            <p><strong>資料處理</strong><span>Python、R、Pandas、Scikit-learn</span></p>
+            <p><strong>工具平台</strong><span>Git、Codex CLI、Windows Server、Azure Blob Storage、JWT、Google 第三方登入、OpenAPI／Scalar</span></p>
+        </div>
+    </section>
+
     <section class="other">
         <h2><img src="./assets/other.png" alt="other"> 專案實作 Projects</h2>
         <div class="detail_content">
@@ -42,22 +54,23 @@
             </div>
             <div class="info">
                 <h3>火箭隊培訓營｜後端工程師培訓暨專題實作</h3>
-                <h4>StyCue 穿搭社群委託平台｜團隊協作後端開發｜C#, ASP.NET Core Web API, EF Core, SQL Server, Azure</h4>
+                <h4>StyCue 穿搭社群委託平台｜協作負責後端開發｜ASP.NET Core Web API, EF Core, SQL Server, Azure</h4>
                 <div class="box">
                     <ul>
-                        <li>將委託生命週期、積分錢包及交易明細等需求轉換為 SQL Server 資料模型與 RESTful API，並以 Controller、Service Layer 與 DTO 分層開發。</li>
-                        <li>運用資料庫交易及 rowversion 版本檢查處理同時發生的加碼與結算操作，避免重複扣款、餘額覆寫及重複結算，維持資料一致性。</li>
+                        <li>將委託生命週期、積分錢包及交易明細等需求轉換為 SQL Server 資料模型與 RESTful API。</li>
+                        <li>以 Controller、Service Layer 與 DTO 分層開發，並使用 async／await 處理資料存取。</li>
+                        <li>於資料模型設定索引，並運用資料庫交易及 rowversion 版本檢查處理同時發生的加碼與結算，避免重複扣款、餘額覆寫及重複結算。</li>
                         <li>以 ASP.NET Core Background Service 執行委託到期檢查與逾期獎勵結算，使非使用者觸發的流程也能持續處理。</li>
-                        <li>整合 JWT 驗證、Google 第三方登入、Azure Blob Storage 與 OpenAPI／Scalar 文件，支援前端串接及測試，並將服務部署於 Windows Server。</li>
+                        <li>與前端成員對齊 API contract；整合 JWT、Google 登入、Azure Blob Storage 與 OpenAPI／Scalar，並將服務部署於 Windows Server。</li>
                     </ul>
                 </div>
 
-                <h4>遊艇品牌官網與後台內容管理系統｜個人專題｜C#, ASP.NET MVC 5, EF6, SQL Server</h4>
+                <h4>遊艇品牌官網與後台內容管理系統｜個人專題｜ASP.NET MVC 5, Razor, EF6, SQL Server</h4>
                 <div class="box">
                     <ul>
-                        <li>以 ASP.NET MVC 5 與 EF6 Code First 建置遊艇品牌官網及後台系統，完成遊艇、新聞、經銷商、會員與聯絡紀錄等模組的資料模型與 CRUD 流程，並實作搜尋、分頁及軟刪除等內容管理功能。</li>
-                        <li>實作後台登入與存取保護、密碼 Salt + SHA-256 雜湊，並於聯絡表單整合 reCAPTCHA、資料保存與 SMTP Email 通知。</li>
-                        <li>設計圖片與附件上傳流程，加入檔案大小、類型與 MIME 驗證，並以 GUID 檔名及失敗清理機制維持檔案與資料庫一致性。</li>
+                        <li>以 ASP.NET MVC 5、Razor Views（.cshtml）與 EF6 Code First 建置遊艇品牌官網及後台系統，完成遊艇、新聞、經銷商、會員與聯絡紀錄等模組，並實作搜尋與分頁。</li>
+                        <li>實作後台登入與存取保護、密碼 Salt + SHA-256 雜湊，並於聯絡表單整合 reCAPTCHA 與資料保存。</li>
+                        <li>以 JavaScript（jQuery）整合 Summernote 編輯器，並設計圖片與附件上傳流程；加入大小、類型與 MIME 驗證，以 GUID 檔名及失敗清理機制維持檔案與資料庫一致性。</li>
                     </ul>
                 </div>
             </div>
@@ -76,7 +89,6 @@
                 <div class="box">
                     <ul>
                         <li>相關課程：Algorithms, Data Science, Information Retrieval, Neural Machine Learning, Deep Learning</li>
-                        <li>課程專題：使用 R 處理缺失值、類別資料轉換與數值縮放，並以矩陣運算實作倒傳遞類神經網路二元分類模型；針對類別不平衡資料，以敏感度、特異度與 AUC 評估模型表現。</li>
                     </ul>
                 </div>
             </div>
@@ -88,6 +100,11 @@
             <div class="info">
                 <h3>國立政治大學</h3>
                 <h4>統計系學士 Bachelor of Science in Statistics｜商學院巨量資料分析學程</h4>
+                <div class="box">
+                    <ul>
+                        <li>相關課程：Database Management Systems、Data Structures</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -130,19 +147,11 @@
                 <h4>國立臺灣大學計量理論與應用研究中心</h4>
                 <div class="box">
                     <ul>
-                        <li>使用 Python（Pandas、Scikit-learn）取用 Microsoft SQL Server 中的論文與專利資料，以決策樹模型自動判斷同名作者是否為同一人，協助資料整併，測試資料正確率可達 96%。</li>
+                        <li>使用 Python 分析 SQL Server 論文與專利資料，建立同名作者判別模型並協助整併，測試正確率達 96%。</li>
+                        <li>依學術指標比較 2 個機構與目標機構的學術實力及排名差距，並提供分析報告。</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="skills">
-        <h2><img src="assets/tool.png" alt="skills"> 技能 Skills</h2>
-        <div class="skill-grid">
-            <p><strong>後端開發</strong><span>C#、ASP.NET Core Web API、ASP.NET MVC 5、Entity Framework Core、Entity Framework 6、RESTful API、Background Service</span></p>
-            <p><strong>資料庫</strong><span>SQL、Microsoft SQL Server、關聯式資料模型設計、資料庫交易與 rowversion 併發控制</span></p>
-            <p><strong>資料處理</strong><span>Python、R、Pandas、Scikit-learn</span></p>
-            <p><strong>工具平台</strong><span>Git、Windows Server、Azure Blob Storage、JWT、Google 第三方登入、OpenAPI／Scalar</span></p>
         </div>
     </section>
     <section class="languages">
